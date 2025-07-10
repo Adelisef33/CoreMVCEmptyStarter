@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+    <head>
+    <meta charset="utf-8">  
+        <title>My first website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+    </head>
+    <body style="color:orange;">
+        <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">Home Page</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Privacy">Privacy Page</a>
+                </li>
+                <li>
+                    <a asp-controller="About" asp-action="About">About Page</a>
+                </li>
+            </ul>
+        </nav>
+        <main
+            @RenderBody()
+        </main>
+    </body>
+</html>
